@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Falling Emotions</title>
+        <link rel="stylesheet" href="stylling.css" />
+    </head>
+
+    <body>
+        <h1 class="gameName">
+            &#8623;&#8623; Falling Emontions &#8623;&#8623;
+        </h1>
+        <div class="container">
+            <div class="leftSide">
+                <div><span>Welcome player</span></div>
+                <h3>Score: <span id="score"></span></h3>
+                <button id="startBtn">Start / Pause</button>
+                <div class="emotions">
+                    <div class="emoji">
+                        <img src="images/love.jpg" alt="" />
+                        <span id="love">1</span>
+                    </div>
+                    <div class="emoji">
+                        <img src="images/angry.jpg" alt="" />
+                        <span id="angry">2</span>
+                    </div>
+                    <div class="emoji">
+                        <img src="images/disoriented.jpg" alt="" />
+                        <span id="disoriented">3</span>
+                    </div>
+                    <div class="emoji">
+                        <img src="images/careless.jpg" alt="" />
+                        <span id="careless">4</span>
+                    </div>
+                    <div class="emoji">
+                        <img src="images/laugh.jpg" alt="" />
+                        <span id="laugh">5</span>
+                    </div>
+                </div>
+                <div id="timer">2 : 00</div>
+                <div id="gameOver"></div>
+            </div>
+
+            <div class="grid">
+                <!-- <img id="fallen"> -->
+                <!-- <div><img src="images/angry.jpg" alt=""></div> -->
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div class="stop"></div>
+                <div class="stop"></div>
+                <div class="stop"></div>
+                <div class="stop"></div>
+                <div class="stop"></div>
+                <div class="stop"></div>
+                <div class="stop"></div>
+                <div class="stop"></div>
+                <div class="stop"></div>
+                <div class="stop"></div>
+            </div>
+        </div>
+        <div id="myModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <h3>Your Last Score: <span id="lastScore"></span></h3>
+                <p>would you like to play again ?</p>
+                <button id="reset">Yes</button>
+                <button id="hide">No</button>
+            </div>
+        </div>
+        <script src="falling.js"></script>
+    </body>
+</html>
